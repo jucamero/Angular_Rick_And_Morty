@@ -1,0 +1,55 @@
+/* Estilos para el título del diálogo */
+h1[mat-dialog-title] {
+    font-size: 1.5rem; /* Tamaño del título */
+    text-align: center; /* Centrado del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  /* Estilos para el contenido del diálogo */
+  mat-dialog-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para la tarjeta */
+  .example-card {
+    max-width: 300px; /* Ancho máximo */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+    background-color: black; /* Fondo negro */
+    border: 2px solid #1e90ff; /* Borde azul oscuro */
+    padding: 10px; /* Espaciado interno */
+  
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    .mat-card-content {
+      ul {
+        list-style-type: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 5px;
+          color: white; /* Color del texto */
+        }
+      }
+    }
+  }
+  
+  /* Estilos para el spinner */
+  mat-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Altura del spinner */
+  }

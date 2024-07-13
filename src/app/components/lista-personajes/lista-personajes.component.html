@@ -1,0 +1,19 @@
+<div class="container">
+  <mat-card class="example-card" (click)="openDialog(listaPersonajes.results[0].id)">
+    <mat-card-header>
+      <mat-card-title>{{ listaPersonajes.results[0].name }}</mat-card-title>
+      <mat-card-subtitle>{{ listaPersonajes.results[0].species }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="listaPersonajes.results[0].image" alt="">
+    <mat-card-content>
+      <div class="parrafo">
+      <p>¡Clickeame!</p>
+    </div>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="pagination-buttons">
+    <button mat-button (click)="paginaAnterior()">Anterior</button>
+    <button mat-button (click)="siguientePagina()">Siguiente</button>
+  </div>
+</div>
